@@ -1,0 +1,17 @@
+.container{
+    padding: 30px;
+}
+
+
+.confirm-card{
+    margin-left: 18%;
+    width: 800px;
+    border-radius: 5px;
+}
+
+.btn1{
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+}

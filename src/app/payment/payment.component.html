@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="confirm-page">
+        <mat-card class="confirm-card mat-elevation-z12">
+            <mat-card-title style="text-align:center;">Booking Confirmation and Payment</mat-card-title>
+            <br>
+            <img mat-card-image src="https://filminformation.com/wp-content/uploads/2020/12/tenet.jpg">
+            <mat-card-content>
+                <h2>Movie Name: Movie 1</h2>
+                <h2>Seats: A1, A2, A3</h2>
+                <h2>Date: 30/07/2021</h2>
+                <h2>Show Time: 11 PM</h2>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button color="primary" class='btn1' (click)="makePayment('₹', 350)">Pay ₹ 350</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

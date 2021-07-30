@@ -1,0 +1,39 @@
+.container{
+    padding: 16px 0 16px 16px;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+.movie-detail-card {
+    width: 500px;
+  }
+
+.btn1{
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+  }
+  
+  .movie-action-buttons {
+    padding-bottom: 20px;
+  }
+
+  .movie-headers-align .mat-expansion-panel{
+      width: 720px;
+  }
+  
+  .movie-headers-align .mat-expansion-panel-header-title,
+  .movie-headers-align .mat-expansion-panel-header-description {
+    flex-basis: 0;
+    margin: auto;
+  }
+  
+  .movie-headers-align .mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .movie-headers-align {
+    margin-left: 8px;
+  }

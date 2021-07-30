@@ -1,0 +1,170 @@
+<div class="container">
+<div class="addmovies-page">
+    <mat-card class="mat-elevation-z12">
+      <mat-card-title style="text-align:center;">Add Movie</mat-card-title>
+            <mat-card-content>
+              <form action="">
+                <mat-form-field>
+                    <input
+                      matInput
+                      placeholder="ID"
+                      required
+                      name="id"
+                      ngModel
+                      #id="ngModel">
+                      <mat-error
+                        *ngIf="id.invalid">
+                        ID is required
+                      </mat-error>
+                    <mat-icon matSuffix>pin</mat-icon>
+                </mat-form-field>
+                <mat-form-field>
+                  <input
+                    matInput
+                    placeholder="Movie Name"
+                    required
+                    name="moviename"
+                    ngModel
+                    #moviename="ngModel">
+                  <mat-icon matSuffix>perm_identity</mat-icon>
+                  <mat-error
+                    *ngIf="moviename.invalid">
+                    Movie Name is required
+                  </mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                  <textarea
+                    matInput
+                    placeholder="Description"
+                    required
+                    name="description"
+                    ngModel
+                    #description="ngModel"></textarea>
+                    <mat-error *ngIf="description.invalid">Description is required</mat-error>
+                  <mat-icon matSuffix>description</mat-icon>
+                </mat-form-field>
+                <mat-form-field>
+                  <input
+                    matInput
+                    placeholder="Director"
+                    required
+                    name="director"
+                    ngModel
+                    #director="ngModel">
+                    <mat-error
+                      *ngIf="director.invalid">
+                      Director is required
+                    </mat-error>
+                  <mat-icon matSuffix>perm_identity</mat-icon>
+    
+                </mat-form-field>
+                <mat-form-field>
+                    <input
+                    matInput
+                    placeholder="Star Cast"
+                    required
+                    name="starcast"
+                    ngModel
+                    #starcast="ngModel">
+                    <mat-error
+                    *ngIf="starcast.invalid">
+                     Star Cast is required
+                    </mat-error>
+                  <mat-icon matSuffix>perm_identity</mat-icon>
+                </mat-form-field>
+                <mat-form-field>
+                    <input
+                      matInput
+                      placeholder="Likes"
+                      required
+                      name="likes"
+                      ngModel
+                      #likes="ngModel">
+                      <mat-error
+                        *ngIf="likes.invalid">
+                        Likes is required
+                      </mat-error>
+                    <mat-icon matSuffix>thumb_up</mat-icon>
+                </mat-form-field>
+                <mat-form-field>
+                    <input
+                      matInput
+                      placeholder="Dislikes"
+                      required
+                      name="dislikes"
+                      ngModel
+                      #dislikes="ngModel">
+                      <mat-error
+                        *ngIf="dislikes.invalid">
+                        Dislikes is required
+                      </mat-error>
+                    <mat-icon matSuffix>thumb_down</mat-icon>
+                </mat-form-field>
+                <mat-form-field>
+                    <textarea
+                      matInput
+                      placeholder="Comments"
+                      required
+                      name="comments"
+                      ngModel
+                      #comments="ngModel"></textarea>
+                      <mat-error *ngIf="comments.invalid">Comments are required</mat-error>
+                    <mat-icon matSuffix>comment</mat-icon>
+                  </mat-form-field>
+                  <mat-form-field>
+                    <input
+                      matInput
+                      placeholder="Rating"
+                      required
+                      name="rating"
+                      ngModel
+                      #rating="ngModel">
+                      <mat-error
+                        *ngIf="rating.invalid">
+                        Rating is required
+                      </mat-error>
+                    <mat-icon matSuffix>star_rate</mat-icon>
+                </mat-form-field>
+                <mat-form-field>
+                    <input
+                      matInput
+                      placeholder="Price"
+                      required
+                      name="price"
+                      ngModel
+                      #price="ngModel">
+                      <mat-error
+                        *ngIf="price.invalid">
+                        Price is required
+                      </mat-error>
+                    <mat-icon matSuffix>attach_money</mat-icon>
+                </mat-form-field>   
+                <mat-form-field>
+                    <div>
+                      <mat-toolbar>
+                        <!-- Display files names -->
+                        <input placeholder="Movie Poster" matInput name="movieposter" ngModel
+                        #movieposter="ngModel"/>
+                         <!-- Browse Button -->
+                        <button mat-flat-button color="accent">
+                          Browse File
+                        </button>
+                       </mat-toolbar>
+                      <!-- Fetch selected filed on change -->
+                      <input type="file" #fileInput id="uploadFile" name="uploadFile" multiple="multiple"
+                        accept="image/*" />
+                    </div>
+                    <mat-icon matSuffix>image</mat-icon>
+                  </mat-form-field>
+                <button
+                  mat-raised-button
+                  color="primary"
+                  class="addmovies-button">
+                  Add Movie
+                </button>
+              </form>
+            </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+

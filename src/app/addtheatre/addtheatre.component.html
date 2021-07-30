@@ -1,0 +1,52 @@
+<div class="addtheatre-page">
+    <mat-card class="mat-elevation-z12">
+      <mat-card-title style="text-align:center;">Add Theatre</mat-card-title>
+            <mat-card-content>
+              <form action="">
+                <mat-form-field>
+                  <input
+                    matInput
+                    placeholder="Theatre Name"
+                    required
+                    name="theatrename"
+                    ngModel
+                    #theatrename="ngModel">
+                  <mat-icon matSuffix>theaters</mat-icon>
+                  <mat-error
+                    *ngIf="theatrename.invalid">
+                    Theatre Name is required
+                  </mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Theatre City</mat-label>
+                    <mat-select>
+                      <mat-option>None</mat-option>
+                      <mat-option *ngFor="let city of cities" [value]="city">{{city}}</mat-option>
+                    </mat-select>
+                  <mat-icon matSuffix>location_city</mat-icon>
+                </mat-form-field>
+                <mat-form-field>
+                  <input
+                    matInput
+                    placeholder="Number of Screens"
+                    required
+                    name="screens"
+                    ngModel
+                    #screens="ngModel">
+                    <mat-error
+                      *ngIf="screens.invalid">
+                      Number of Screens is required
+                    </mat-error>
+                  <mat-icon matSuffix>monitor</mat-icon>
+                </mat-form-field>
+                <button
+                  mat-raised-button
+                  color="primary"
+                  class="addtheatre-button">
+                  Add Theatre
+                </button>
+              </form>
+            </mat-card-content>
+    </mat-card>
+  </div>
+

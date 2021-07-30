@@ -1,0 +1,28 @@
+.container{
+    padding: 16px 0 0 16px;
+    margin-left: 10px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.card1 {
+    margin: 20px;
+    flex: 1 1 auto;
+    width: 285px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+img {
+    width:270px;
+    height :250px;
+    margin: 5px;
+}
+
+span {
+    display: inline-block;
+    font-size: 13px;
+  }
